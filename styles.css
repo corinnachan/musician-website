@@ -3,6 +3,7 @@
     padding: 0;
     font-family: 'Arvo', serif;
     color: black;
+    box-sizing: border-box;
 }
 
 .wrapper { 
@@ -10,6 +11,10 @@
     margin: 0 auto;
     display: block;
     max-width: 900px;
+}
+
+.mob-only {
+    display: none;
 }
 
 .about { 
@@ -37,7 +42,6 @@ iframe {
 
 label, input {
     display: block;
-    
 }
 
 input, textarea {
@@ -45,9 +49,18 @@ input, textarea {
     font-size: 1em;
     padding: 0.5em;
     margin-bottom: 1em;
+    border: 1px solid grey;
 }
 
-.contact  h2 {
+input[type=submit] {
+    background: black;
+    color: white;
+    border: 0;
+    outline: 0;
+    padding: 0.75em;
+}
+
+.contact h2 {
     font-family: 'Megrim', cursive;
     font-size: 2.5em;
     padding: 10px;
@@ -55,10 +68,11 @@ input, textarea {
 }
 
 .contact {
-    padding: 0 15em;
+    margin: 0 auto 4em;
+    max-width: 500px;
 }
 
-.contact  h2 {
+.contact h2 {
     font-family: 'Megrim', cursive;
     font-size: 2.5em;
     padding: 10px;
@@ -67,7 +81,7 @@ input, textarea {
 
 .header {
     height: calc(100vh - 4em);
-    width: 100vw;
+    width: 100%;
     display: flex;
     position: relative;
     justify-content: space-between;
@@ -171,8 +185,50 @@ nav a:hover {
     line-height: 1.5;   
 }
 
+@media screen and (max-width: 1200px) {
+    .header {
+        background-size: cover;
+    }
+}
+
 @media screen and (max-width: 900px){
+    nav {
+        display: none;
+    }
+    .header {
+        height: auto;
+        background: white;
+        font-size: 0.5em;
+    }
+    .header li.social {
+        padding-top: 1.85em;
+    }
+    .profile-pic img {
+        width: 100%;
+    }
+    .mob-only {
+        display: block;
+    }
     iframe {
-        height: 56vw; 
+        height: 65vw;
+    }
+    .shows table {
+        padding: 0;
+    }
+    table tr {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        padding: 1em 0;
+    }
+    table tr:first-child {
+        display: none;
+    }
+    table tr:last-child {
+        border-bottom: 0;
+    }
+    table td {
+        display: block;
+        border: 0;
+        text-align: center;
     }
 }

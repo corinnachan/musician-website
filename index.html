@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Arvo|Megrim" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>
@@ -33,6 +35,10 @@
             </li>
         </ul>
 
+    </div>
+
+    <div class="mob-only profile-pic">
+        <img src="images/Lula.jpg" alt="Image of Lula">
     </div>
 <!-- make sticky nav -->
     <nav>
@@ -111,25 +117,26 @@
     <!-- could potentially combine this and get in touch section -->
     <div class="contact" id="contact">
         <h2>GET IN TOUCH</h2>
-        <form action="" method="post">
+        <form action="https://formspree.io/lulam3brahtu@gmail.com" method="post">
             <div>
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name">
             </div>
             <div>
-                <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="mail">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="_replyto">
             </div>
             <div>
                 <label for="msg">Message:</label>
                 <textarea id="msg" name="message"></textarea>
             </div>
+            <input type="hidden" name="_next" value="https://lulabox.io/thanks" />
+            <input type="hidden" name="_cc" value="amy@adickens.co.uk" />
+            <input type="text" name="_gotcha" style="display:none" />
+            <input type="submit" value="Send">
         </form>
     </div>
 
-    <!-- REVIEW TEXT SCROLL IN BOTTOM LEFT  -->
-    
-    <p>"review review review"</p>
 
 </div>
 
