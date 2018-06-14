@@ -23,3 +23,11 @@
 # PROJECT PAGE /projects
 
 * content drop page for ideas 
+
+# Dates for Performances
+
+Word Festival Installation - 28th June-30th June - Finsbury Library - free 
+Love Supreme Festival - 29th June - Glyne - Love supreme website (HOA)
+Imagine Watford - 30th June - Watford - Imagine websiute (HOA)
+V&A - 15th & 22nd September - V&A website (HOA)
+WoW fest cardiff - 23rd - 25th September - wow website
