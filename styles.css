@@ -216,15 +216,15 @@ nav a:hover {
         padding: 0;
     }
     table tr {
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid rgb(129, 16, 16);
         display: block;
         padding: 1em 0;
     }
-    table tr:first-child {
+    table thead {
         display: none;
     }
-    table tr:last-child {
-        border-bottom: 0;
+    table tbody:last-child tr {
+        border: none;
     }
     table td {
         display: block;
